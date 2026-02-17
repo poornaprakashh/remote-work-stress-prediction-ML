@@ -56,4 +56,4 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost
 - Performance is modest due to class overlap and unmeasured confounders
 
 ## Author
-[Your Name]
+Poorna Prakash
