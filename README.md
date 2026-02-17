@@ -61,24 +61,6 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost
 - **F1-macro**: 0.345 (105% improvement over baseline)
 - **Cross-validation**: 5-fold stratified CV with F1-macro as metric
 
-## Key Findings
-- **Access to mental health resources** is the strongest predictor (6.2% feature importance)
-- **Work location** and **job role** are significant predictors
-- **Medium stress category** is most difficult to classify (F1 = 0.32)
-- Performance is modest due to substantial class overlap and unmeasured confounders (personality traits, home life factors)
-
-## Methodology
-1. **Data preprocessing**: Handled missing values, removed leakage-prone variables (Mental_Health_Condition, Productivity_Change), applied appropriate encoding
-2. **Models compared**: XGBoost vs Histogram Gradient Boosting (plus baseline Dummy Classifier)
-3. **Evaluation**: Macro-averaged F1 score to ensure balanced performance across all stress levels
-4. **Hyperparameter tuning**: RandomizedSearchCV with 30 iterations, 3-fold CV
-
-## Limitations
-- Cross-sectional design (cannot establish causation)
-- Self-reported data (potential reporting bias)
-- Missing key variables (personality traits, objective workplace metrics)
-- Dataset from COVID era may not generalize to current remote work contexts
-
 ## Author
 Poorna Prakash
 
